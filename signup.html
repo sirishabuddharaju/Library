@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="library.svg" type="image/x-icon">
+</head>
+<body>
+   <fieldset><legend>Sign Up</legend>
+ <form action="login.html" method="post" target="_blank" autocomplete="off" >
+        <strong> <label for="nam" >Enter User lName</label></strong>
+        <input type="text" placeholder="ex: Buddharaju Sirisha" name="nam" id="nam" required /> <br /><br />
+
+        <strong><label for="ema" >Enter Email</label></strong>
+        <input type="email" placeholder="ex: siri@gmail.com" name="ema" id="ema"  requried /> <br /><br />
+
+        <strong><label for="pho" >Enter Phone Number </label></strong>
+        <input type="tell" placeholder="ex: 1234567890" name="pho" id="pho" required minlength="10" maxlength="10"/> <br /><br />
+
+       
+        <strong><label for="age"> Enter your Age </label></strong>
+        <input type="number" id="age" name="age" min="18" max="30" required/><br /><br />
+        
+       <strong> <label for="m" >Select Gender :</label> </strong>
+        <input type="radio"  id="m" name="g" value="male" required /> 
+        <label for="m">Male</label>
+         <input type="radio"  id="f" name="g" value="female" required /> 
+          <label for="f">Female</label><br /><br />
+
+        <strong><label for="cit" >Enter The City You Live</label></strong>
+        <input type="text" placeholder="ex: miyapur" id="cit" name="cit" required /> <br /><br />
+        
+        <strong><label for="pass"> Enter Password</label></strong>
+        <input type="password" id="pass" name="pass" required  minlength="5" maxlength="10"><br /><br />
+
+        <strong><label for="pass1"> Confrim Password</label></strong>
+        <input type="password" id="pass1" name="pass1" required  minlength="5" maxlength="10"><br/><br/>
+    
+        <div>
+            <input type="button" value="button" />   
+            <input type="reset" value="Reset" />
+        </div><br/>
+        <p>If You Were Already Registered <a href="login.html">Login In</a></p>
+    </form>
+    </fieldset>
+</body>
+</html>

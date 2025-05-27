@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="library.svg" type="image/x-icon">
+</head>
+<body>
+    <fieldset width="500">
+        <legend><strong>Login </strong></legend>
+    <form action="home.html" method="post">
+        <div><label for="use"><strong>User Name</strong></label>
+        <input type="text" id="use" name="use" required minlength="5" maxlength="10" pattern="[[a-z]+ [A-Z]+[0-9]+]{5,10}"/></div><br/>
+       
+        <div><label for="pass"><strong>Password</strong></label>
+        <input type="password" id="pass" name="pass" required minlength="5" maxlength="10" pattern="[[0-9]+[a-z]+@#$^& [A-Z]+]{5,10}" ></div><br />
+
+        <div><input type="submit" value="submit" />
+        <input type="reset" value="Reset" /></div><br />
+        <a href="forgotpassword.html"> Frogotten Password</a>
+
+    </form></fieldset>
+</body>
+</html>
