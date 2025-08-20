@@ -5,46 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="shortcut icon" href="library.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <fieldset><legend>Sign Up</legend>
- <form action="login.html" method="post" target="_blank" autocomplete="off" >
-        <strong> <label for="nam" >Enter User lName</label></strong>
-        <input type="text" placeholder="ex: Buddharaju Sirisha" name="nam" id="nam" required /> <br /><br />
 
-        <strong><label for="ema" >Enter Email</label></strong>
-        <input type="email" placeholder="ex: siri@gmail.com" name="ema" id="ema"  requried /> <br /><br />
+<div class="log1"> 
+     <div class="log"><h3>Create Account For WindBook Library by Register to WindBook Library to borrow or buy the books,if You
+         had an Account just login</h3>
+     </div>
+   
+ <div> <form action="login.html" method="post" target="_blank" autocomplete="off" >
+        <h3>Sign Up</h3>
+        <input type="text" placeholder=" Full Name" required /> 
+
+        <input type="email" placeholder="Enter Email" name="ema" id="ema"  requried />
 
        
-        <strong><label for="pho" >Enter Phone Number </label></strong>
-         <input type="tel"  name="pho" id="ph" required value="+91" readonly /> 
-        <input type="tel" placeholder="1234567890" name="pho" id="pho" required minlength="10" maxlength="10"/> <br /><br />
+        <div>
+        <input type="tel"  name="pho" id="ph" required value="+91" readonly /> 
+        <input type="tel" placeholder="Phone Number" name="pho" id="pho" required minlength="10" maxlength="10"/> </div>
 
        
-        <strong><label for="age"> Enter your Age </label></strong>
-        <input type="number" id="age" name="age" min="18" max="30" required/><br /><br />
+        <input type="number" id="age" name="age" min="18" max="30" required placeholder="age"/>
         
-       <strong> <label for="m" >Select Gender :</label> </strong>
-        <input type="radio"  id="m" name="g" value="male" required /> 
-        <label for="m">Male</label>
-         <input type="radio"  id="f" name="g" value="female" required /> 
-          <label for="f">Female</label><br /><br />
+       <select name="gender" id="gen">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="no">Don't Wanted to Say</option>
+       </select>
 
-        <strong><label for="cit" >Enter The City You Live</label></strong>
-        <input type="text" placeholder="ex: miyapur" id="cit" name="cit" required /> <br /><br />
+        <input type="text" placeholder="ex: miyapur" id="cit" name="cit" required  placeholder="Location"/>
         
-        <strong><label for="pass"> Enter Password</label></strong>
-        <input type="password" id="pass" name="pass" required  minlength="5" maxlength="10"><br /><br />
+        
+        <input type="password" id="pass" name="pass" required  minlength="5" maxlength="10" placeholder="Password">
 
-        <strong><label for="pass1"> Confrim Password</label></strong>
-        <input type="password" id="pass1" name="pass1" required  minlength="5" maxlength="10"><br/><br/>
+       
+        <input type="password" id="pass1" name="pass1" required  minlength="5" maxlength="10" placeholder="Confirm Password">
     
         <div>
-            <input type="button" value="button" />   
-            <input type="reset" value="Reset" />
-        </div><br/>
+             <button type="submit">submit</button>
+         <button type="reset">Reset</button>
+        </div>
         <p>If You Were Already Registered <a href="login.html">Login In</a></p>
-    </form>
-    </fieldset>
+    </form></div></div>
+    
 </body>
 </html>

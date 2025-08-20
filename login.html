@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="shortcut icon" href="library.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
 <body>
-    <fieldset width="500">
-        <legend><strong>Login </strong></legend>
-    <form action="home.html" method="post">
-        <div><label for="use"><strong>User Name</strong></label>
-        <input type="text" id="use" name="use" required minlength="5" maxlength="10" pattern="[[a-z]+ [A-Z]+[0-9]+]{5,10}"/></div><br/>
-       
-        <div><label for="pass"><strong>Password</strong></label>
-        <input type="password" id="pass" name="pass" required minlength="5" maxlength="10" pattern="[[0-9]+[a-z]+@#$^& [A-Z]+]{5,10}" ></div><br />
+    <div class="log1">
+        <div class="log"> <h3>Login into Your Account of WindBook Library if You had an Account else Register to WindBook Library to borrow or buy the books</h3>
+       </div>
+       <div>
+         <form action="home.html" method="post">
+        <h3>Login /Sign In</h3>
+        <input type="text" id="use" name="use" required minlength="5" maxlength="10" placeholder="Email"/>
+        <div id="passw"><input type="password" id="pass" name="pass" required minlength="5" maxlength="10"  placeholder="Password">
+         <a href="forgotpassword.html"> Frogotten Password</a></div>
+         <div>
+         <button type="submit">submit</button>
+         <button type="reset">Reset</button>
+       </div></form></div>
+    </div>
 
-        <div><input type="submit" value="submit" />
-        <input type="reset" value="Reset" /></div><br />
-        <a href="forgotpassword.html"> Frogotten Password</a>
-
-    </form></fieldset>
 </body>
 </html>
